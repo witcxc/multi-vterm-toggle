@@ -21,7 +21,7 @@ An Emacs package to quickly toggle a `multi-vterm` buffer dedicated to your curr
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/multi-vterm-toggle.git
+   git clone https://github.com/witcxc/multi-vterm-toggle.git
    ```
 2. Add to your `init.el`:
    ```elisp
