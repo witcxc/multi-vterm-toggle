@@ -35,7 +35,8 @@ Assuming you have the package locally or configured via a recipe:
 
 ```elisp
 (use-package multi-vterm-toggle
-  :load-path "/path/to/multi-vterm-toggle/" ;; If local
+  ;;:load-path "/path/to/multi-vterm-toggle/" ;; If local
+  :straight (:host github :repo "witcxc/multi-vterm-toggle") ;; If straight
   :bind (("C-c t" . multi-vterm-toggle))
   :config
   (setq multi-vterm-toggle-height 0.3) ;; Occupy 30% of screen
