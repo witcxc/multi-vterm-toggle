@@ -67,9 +67,10 @@
   "Create a new vterm buffer for PATH."
   (let ((default-directory path)
         (buf-name (multi-vterm-toggle--buffer-name path)))
-    (with-current-buffer (vterm buf-name)
-      (multi-vterm-internal) ;; Register with multi-vterm if needed
-      (current-buffer))))
+    (save-window-excursion
+      (with-current-buffer (vterm buf-name)
+        (multi-vterm-internal) ;; Register with multi-vterm if needed
+        (current-buffer)))))
 
 ;;;###autoload
 (defun multi-vterm-toggle ()
